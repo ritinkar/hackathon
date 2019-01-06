@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "bid",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "auction": {
+      "model": "auction",
+      "via": "bids"
+    },
+    "user": {
+      "model": "user",
+      "via": "bid",
+      "plugin": "users-permissions"
+    },
+    "amount": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

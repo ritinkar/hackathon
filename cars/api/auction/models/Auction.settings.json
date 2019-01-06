@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "bidevent",
+  "info": {
+    "name": "auction",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "car": {
+      "model": "car",
+      "via": "bidevent"
+    },
+    "duration": {
+      "default": "",
+      "type": "integer"
+    },
+    "bids": {
+      "collection": "bid",
+      "via": "auction"
+    },
+    "start": {
+      "default": "",
+      "type": "integer"
+    },
+    "winning_amount": {
+      "default": "",
+      "type": "integer"
+    },
+    "winning_user": {
+      "model": "user",
+      "via": "auction",
+      "plugin": "users-permissions"
+    }
+  }
+}

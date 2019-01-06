@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "car",
+  "info": {
+    "name": "car",
+    "description": "",
+    "mainField": "name"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "image": {
+      "default": "",
+      "type": "string"
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "bidevent": {
+      "model": "auction",
+      "via": "car"
+    },
+    "biddable": {
+      "default": false,
+      "type": "boolean"
+    }
+  }
+}

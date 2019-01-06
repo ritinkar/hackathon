@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/auctions",
+      "handler": "Auction.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/liveauctions",
+      "handler": "Auction.findlive",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/auctions/count",
+      "handler": "Auction.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/auctions/:_id",
+      "handler": "Auction.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/auctions",
+      "handler": "Auction.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/auctions/:_id",
+      "handler": "Auction.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/auctions/:_id",
+      "handler": "Auction.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
