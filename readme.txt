@@ -45,6 +45,7 @@ run kafka and zookeeper
 create a topic called bids with 8 partitions
 run mongodb
 run redis
+need node >10.x
 
 ## to run the stream processor
 
